@@ -51,10 +51,10 @@
             A little inspiration to brighten your day:
           </p>
           <div class="video-wrapper">
-            <!-- Embedded YouTube video - Aesthetic study/reading ambiance -->
+            <!-- Embedded YouTube video - Lofi Girl is embeddable -->
             <iframe 
-              src="https://www.youtube.com/embed/jfKfPfyJRdk" 
-              title="Lofi Girl - beats to relax/study to"
+              src="https://www.youtube.com/embed/D6M2PhxO4ak" 
+              title="Lofi hip hop music - beats to relax/study to"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen
             ></iframe>
@@ -68,16 +68,26 @@
         <div class="media-card">
           <h3>📚 Book Recommendation</h3>
           <p style="margin-bottom: 1rem;">
-            One of my all-time favorite booktuber videos:
+            One of my all-time favorite books:
           </p>
-          <div class="video-wrapper">
-            <!-- HTML5 video placeholder with poster -->
-            <video controls poster="../images/video-poster.jpg">
-              <source src="../videos/sample-video.mp4" type="video/mp4">
-              <!-- Fallback for browsers that don't support video -->
-              <p>Your browser doesn't support HTML5 video. 
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch on YouTube</a></p>
-            </video>
+          <div style="text-align: center; padding: 1rem;">
+            <!-- Goodreads Book Widget -->
+            <div id="gr_custom_widget_1705075200" style="margin: 0 auto;">
+              <div class="gr_custom_container_1705075200">
+                <div class="gr_custom_each_container_1705075200" style="background: var(--beige); padding: 1.5rem; border-radius: var(--radius-md);">
+                  <a href="https://www.goodreads.com/book/show/52578297-the-midnight-library" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--brown); display: block;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602190253i/52578297.jpg" 
+                         alt="The Midnight Library" 
+                         style="max-width: 150px; border-radius: var(--radius-sm); box-shadow: 0 4px 12px var(--shadow); display: block; margin: 0 auto;">
+                    <h4 style="margin-top: 1rem; color: var(--brown);">The Midnight Library</h4>
+                    <p style="font-size: 0.9rem; color: var(--brown-light);">by Matt Haig</p>
+                  </a>
+                  <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--brown-light); font-style: italic;">
+                    "Between life and death there is a library..."
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--brown-light);">
             Check out amazing book recommendations! 📖
@@ -133,39 +143,15 @@
         </p>
         
         <div class="social-links">
-          <!-- Goodreads -->
-          <a href="https://www.goodreads.com/user/show/123456789-bruna" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="social-link goodreads">
-            📚 Goodreads
-          </a>
-          
+        
           <!-- Instagram -->
-          <a href="https://www.instagram.com/bruna.dragulin" 
+          <a href="https://www.instagram.com/lilith.p.6" 
              target="_blank" 
              rel="noopener noreferrer" 
              class="social-link instagram">
             📸 Instagram
           </a>
-          
-          <!-- Portfolio/Behance -->
-          <a href="https://www.behance.net/brunadragulin" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="social-link portfolio">
-            🎨 Behance Portfolio
-          </a>
-          
-          <!-- Pinterest -->
-          <a href="https://www.pinterest.com/brunadragulin" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="social-link" 
-             style="background-color: hsl(0, 50%, 85%);">
-            📌 Pinterest
-          </a>
-          
+ 
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/brunadragulin" 
              target="_blank" 
@@ -189,22 +175,35 @@
       <!-- Favorite Books Widget -->
       <div class="paper-section tilted-right" style="margin-top: 2rem;">
         <span class="tape tape-top-left"></span>
-        <h2>📖 Currently Reading</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
-          <div style="flex: 1; min-width: 200px; padding: 1rem; background: var(--beige); border-radius: var(--radius-md);">
+        <h2 style="text-align: center;">📖 Currently Reading</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; justify-content: center; align-items: stretch;">
+          <div style="flex: 1; min-width: 200px; max-width: 250px; padding: 1.5rem; background: var(--beige); border-radius: var(--radius-md); text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602190253i/52578297.jpg" 
+                 alt="The Midnight Library" 
+                 style="width: 120px; height: auto; border-radius: var(--radius-sm); box-shadow: 0 4px 8px var(--shadow); margin: 0 auto 0.75rem auto; display: block;">
             <h4 style="margin-bottom: 0.5rem;">📕 Fiction</h4>
             <p style="font-style: italic; margin: 0;">"The Midnight Library"</p>
             <p style="font-size: 0.9rem; color: var(--brown-light); margin: 0;">by Matt Haig</p>
           </div>
-          <div style="flex: 1; min-width: 200px; padding: 1rem; background: var(--beige); border-radius: var(--radius-md);">
-            <h4 style="margin-bottom: 0.5rem;">📗 Non-Fiction</h4>
-            <p style="font-style: italic; margin: 0;">"Atomic Habits"</p>
-            <p style="font-size: 0.9rem; color: var(--brown-light); margin: 0;">by James Clear</p>
+          <div style="flex: 1; min-width: 200px; max-width: 250px; padding: 1.5rem; background: var(--beige); border-radius: var(--radius-md); text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.oreilly.com/library/view/introducing-python-2nd/9781492051374/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--brown);">
+              <img src="https://www.oreilly.com/covers/urn:orm:book:9781492051374/300w/" 
+                   alt="Introducing Python" 
+                   style="width: 120px; height: auto; border-radius: var(--radius-sm); box-shadow: 0 4px 8px var(--shadow); margin: 0 auto 0.75rem auto; display: block;">
+              <h4 style="margin-bottom: 0.5rem;">📗 Non-Fiction</h4>
+              <p style="font-style: italic; margin: 0;">"Introducing Python"</p>
+              <p style="font-size: 0.9rem; color: var(--brown-light); margin: 0;">by Bill Lubanovic</p>
+            </a>
           </div>
-          <div style="flex: 1; min-width: 200px; padding: 1rem; background: var(--beige); border-radius: var(--radius-md);">
-            <h4 style="margin-bottom: 0.5rem;">📘 Design</h4>
-            <p style="font-style: italic; margin: 0;">"Steal Like an Artist"</p>
-            <p style="font-size: 0.9rem; color: var(--brown-light); margin: 0;">by Austin Kleon</p>
+          <div style="flex: 1; min-width: 200px; max-width: 250px; padding: 1.5rem; background: var(--beige); border-radius: var(--radius-md); text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://chinesezerotohero.teachable.com/p/hsk-1-course" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--brown);">
+              <img src="https://uploads.teachablecdn.com/attachments/BiPU3PTGQhCCNGQjXICf_Textbook+Covers+copy+2.png" 
+                   alt="HSK Standard Course 1" 
+                   style="width: 120px; height: auto; border-radius: var(--radius-sm); box-shadow: 0 4px 8px var(--shadow); margin: 0 auto 0.75rem auto; display: block;">
+              <h4 style="margin-bottom: 0.5rem;">📘 Language</h4>
+              <p style="font-style: italic; margin: 0;">"HSK Standard Course 1"</p>
+              <p style="font-size: 0.9rem; color: var(--brown-light); margin: 0;">by Jiang Liping</p>
+            </a>
           </div>
         </div>
       </div>
@@ -219,12 +218,12 @@
         </p>
         <div style="background: var(--beige); padding: 2rem; border-radius: var(--radius-lg);">
           <p style="font-size: 1.2rem; margin: 0;">
-            🎧 <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
+            🎧 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2boweG1nT0T2k0Xkd99iZn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               Listen on Spotify
             </a>
           </p>
           <p style="font-size: 0.9rem; color: var(--brown-light); margin-top: 0.5rem;">
-            (Playlist: Cozy Reading Vibes ☕📚)
+            (Playlist: Romanticize study)
           </p>
         </div>
       </div>
@@ -249,12 +248,11 @@
     <div class="container">
       <div class="footer-content">
         <p>Made with 💕 by Bruna Dragulin</p>
-        <div class="footer-links">
-          <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer">Goodreads</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="contact.html">Contact Me</a>
+          <div class="footer-links">
+          <a href="https://www.instagram.com/lilith.p.6" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="pages/contact.html">Contact Me</a>
         </div>
-        <p><small>© 2024 Bruna Dragulin. All rights reserved.</small></p>
+        <p><small>© 2026 Bruna Dragulin. All rights reserved.</small></p>
       </div>
     </div>
   </footer>
