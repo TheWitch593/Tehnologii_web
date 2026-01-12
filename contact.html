@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Bruna Dragulin - Get in touch for collaborations, questions, or just to say hello">
+  <title>Contact | Bruna Dragulin</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="logo">Bruna Dragulin</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="gallery.html">Photo Album</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1>Let's Connect 💌</h1>
+      <p class="subtitle">I'd love to hear from you!</p>
+    </header>
+
+    <section class="container">
+      <!-- Contact Introduction -->
+      <div class="paper-section" style="text-align: center; margin-bottom: 2rem;">
+        <span class="tape tape-top-left"></span>
+        <span class="tape tape-top-right"></span>
+        <p>
+          Whether you want to collaborate on a project, have a question, 
+          need some design work, or just want to chat about books — 
+          I'm always happy to connect! Fill out the form below and I'll 
+          get back to you as soon as possible. ✨
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="POST" enctype="multipart/form-data">
+        <span class="tape tape-top-left"></span>
+        <span class="tape tape-top-right"></span>
+        
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Send Me a Message 📝</h2>
+        
+        <!-- Name Field -->
+        <div class="form-group">
+          <label for="name">Your Name *</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="What should I call you?"
+            required
+            maxlength="100"
+            aria-required="true"
+          >
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="your.email@example.com"
+            required
+            maxlength="255"
+            aria-required="true"
+          >
+        </div>
+
+        <!-- Subject Field -->
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required aria-required="true">
+            <option value="" disabled selected>What's this about?</option>
+            <option value="collaboration">🤝 Collaboration</option>
+            <option value="design">🎨 Design Project</option>
+            <option value="book-recommendation">📚 Book Recommendation</option>
+            <option value="question">❓ General Question</option>
+            <option value="just-saying-hi">👋 Just Saying Hi!</option>
+            <option value="other">✨ Other</option>
+          </select>
+        </div>
+
+        <!-- How did you find me - Radio Buttons -->
+        <div class="form-group">
+          <label>How did you find me?</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="found-via" value="social-media">
+              Social Media
+            </label>
+            <label>
+              <input type="radio" name="found-via" value="friend">
+              Friend
+            </label>
+            <label>
+              <input type="radio" name="found-via" value="search">
+              Search Engine
+            </label>
+            <label>
+              <input type="radio" name="found-via" value="other">
+              Other
+            </label>
+          </div>
+        </div>
+
+        <!-- Interests - Checkboxes -->
+        <div class="form-group">
+          <label>What interests you? (Select all that apply)</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="interests" value="design">
+              Graphic Design
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="books">
+              Book Reviews
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="collaboration">
+              Collaboration
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="tech">
+              Tech & Coding
+            </label>
+          </div>
+        </div>
+
+        <!-- Message Field -->
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Tell me what's on your mind..."
+            required
+            maxlength="1000"
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-group">
+          <label for="attachment">Attach a File (optional)</label>
+          <input 
+            type="file" 
+            id="attachment" 
+            name="attachment"
+            accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
+          >
+          <small style="display: block; margin-top: 0.5rem; color: var(--brown-light);">
+            Accepted formats: PDF, DOC, PNG, JPG (Max 5MB)
+          </small>
+        </div>
+
+        <!-- Newsletter Checkbox -->
+        <div class="form-group">
+          <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <input type="checkbox" name="newsletter" value="yes" style="width: 20px; height: 20px;">
+            <span style="font-family: var(--font-body); font-size: 1rem;">
+              Subscribe to my newsletter for book reviews & design tips! 📮
+            </span>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">
+          Send Message 💕
+        </button>
+      </form>
+
+      <!-- Alternative Contact -->
+      <div class="paper-section tilted-right" style="text-align: center; margin-top: 2rem;">
+        <h3>Other Ways to Reach Me</h3>
+        <p style="margin-bottom: 1rem;">
+          Not a fan of forms? No problem! You can also find me on:
+        </p>
+        <div class="social-links" style="justify-content: center;">
+          <a href="mailto:bruna.dragulin@email.com" class="social-link">
+            📧 Email Me
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+            📸 Instagram
+          </a>
+          <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer" class="social-link goodreads">
+            📚 Goodreads
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="flower-divider">✿ ❀ ✿ ❀ ✿</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>Made with 💕 by Bruna Dragulin</p>
+        <div class="footer-links">
+          <a href="https://www.goodreads.com" target="_blank" rel="noopener noreferrer">Goodreads</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="contact.html">Contact Me</a>
+        </div>
+        <p><small>© 2026 Bruna Dragulin. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
